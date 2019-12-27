@@ -12,6 +12,7 @@ import android.widget.Toast;
 import com.vansuita.pickimage.bean.PickResult;
 import com.vansuita.pickimage.bundle.PickSetup;
 import com.vansuita.pickimage.dialog.PickImageDialog;
+import com.vansuita.pickimage.enums.EPickType;
 import com.vansuita.pickimage.listeners.IPickResult;
 
 import java.util.ArrayList;
@@ -45,6 +46,7 @@ public class MainActivity extends AppCompatActivity implements IPickResult {
         PickSetup setup = new PickSetup()
                 .setTitle("تصوير جديد")
                 .setProgressText("درحال ارسال...")
+                .setPickTypes(EPickType.GALLERY, EPickType.CAMERA)
                 .setSystemDialog(true);
         PickImageDialog.build(setup).show(this);
     }
