@@ -3,7 +3,7 @@ package com.example.camerarecyclere;
 import android.graphics.Bitmap;
 
 public class Model {
-    Bitmap bitmap;
+    private Bitmap bitmap;
 
     public Model(Bitmap bitmap) {
         this.bitmap = bitmap;
